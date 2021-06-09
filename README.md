@@ -1,9 +1,9 @@
 # hackmeetings
 Repo for hosting challenges and various hacks we produce during our meetings
 
-## 2020-06-08
+## 2021-06-08
 
-The challenge today comes from [dex](https://github.com/0ddc0de), and is a reverse engineering challenge called [teammanager](./20200608_teammanager).
+The challenge today comes from [dex](https://github.com/0ddc0de), and is a reverse engineering challenge called [teammanager](./20210608_teammanager).
 
 The first few steps when faced with a binary like this are usually variants of :
 
