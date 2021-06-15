@@ -24,3 +24,28 @@ Here is what the team was able to accomplish :
 Next time we will :
  * finish the teammanager exploit
  * [cyanpencil](https://github.com/cyanpencil) will bring another heap challenge
+
+## 2021-06-15
+
+Finished an exploit for `teammanger`.
+There are two ways of exploiting the `teammanager` challenge:
+
+* type confusion after uaf (we focused on this one)
+* manipulate tcache
+
+Some tools/commands we used:
+
+* gdb/gef
+  * set follow-fork-mode child
+  * `-ex` cmd line flag
+  * add-symbol-file
+  * `pselected`
+  * `xinfo <addr>`
+  * `got`
+* compile c file using a struct so that we can `print *(struct player_t*) <addr>`
+* python
+  * fit()
+* pwntools
+  * set debug level from cmdline: `./x.py DEBUG`
+  * use `sendlineafter()` to consume all input and clear the input buffer
+  * create `ELF` object and set `libc.address`, then refer to `libc.symbols['system']`
