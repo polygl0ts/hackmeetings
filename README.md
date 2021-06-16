@@ -37,15 +37,16 @@ Some tools/commands we used:
 
 * gdb/gef
   * set follow-fork-mode child
-  * `-ex` cmd line flag
-  * add-symbol-file
+  * `-ex` cmd line flag (only one command per flag)
+  * add-symbol-file 
   * `pselected`
   * `xinfo <addr>`
   * `got`
 * compile c file using a struct so that we can `print *(struct player_t*) <addr>`
-* python
-  * fit()
+  * the struct must be used _at least once_ in main otherwise ignored by gcc
 * pwntools
+  * fit({<offset>: b"random bytes"})
+  * pause()
   * set debug level from cmdline: `./x.py DEBUG`
   * use `sendlineafter()` to consume all input and clear the input buffer
   * create `ELF` object and set `libc.address`, then refer to `libc.symbols['system']`
