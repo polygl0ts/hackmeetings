@@ -54,7 +54,7 @@ Some tools/commands we used:
   
 ## 2021-08-24
 
-The challenge babyrev comes from [corCTF](https://2021.cor.team/) and is about reverse engineering.
+The challenge `babyrev` comes from [corCTF](https://2021.cor.team/) and is about reverse engineering.
 
 We follow the same steps as in the hackmeeting held the 06-08-2021.
 Once the binary is opened in ghidra/ida/radare2 it is pretty easy to grasp the goal of the challenge, the binary expects the flag as input.
