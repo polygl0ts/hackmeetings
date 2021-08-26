@@ -50,3 +50,23 @@ Some tools/commands we used:
   * set debug level from cmdline: `./x.py DEBUG`
   * use `sendlineafter()` to consume all input and clear the input buffer
   * create `ELF` object and set `libc.address`, then refer to `libc.symbols['system']`
+  
+  
+## 2021-08-24
+
+The challenge babyrev comes from [corCTF](https://2021.cor.team/) and is about reverse engineering.
+
+We follow the same steps as in the hackmeeting held the 06-08-2021.
+Once the binary is opened in ghidra/ida/radare2 it is pretty easy to grasp the goal of the challenge, the binary expects the flag as input.
+
+Tools we used to reverse the binary :
+
+  * ghidra
+  * [man-pages](https://www.kernel.org/doc/man-pages/)
+  * python3
+
+The team then tried other ways of getting the flag :
+ * use of [angr](https://angr.io/) to solve the challenge with symbolic execution
+ * use of [afl++](https://github.com/AFLplusplus/AFLplusplus) to solve the challenge by fuzzing a decompiled version where a crash was added if the flag was correct.
+ 
+ 
