@@ -1,6 +1,20 @@
 # hackmeetings
 Repo for hosting challenges and various hacks we produce during our meetings
 
+## 2021-09-07
+
+Marcel is bothering me to no end
+
+The challenge today comes from ALLES! CTF, played last weekend
+
+the chall is shitty java
+is called jsp
+
+have fun
+
+Next time we will :
+ * Switch to a better language
+
 ## 2021-06-08
 
 The challenge today comes from [dex](https://github.com/0ddc0de), and is a reverse engineering challenge called [teammanager](./20210608_teammanager).
